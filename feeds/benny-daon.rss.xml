@@ -1,142 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title></title><link>http://www.tuzig.com/</link><description>Building Fires in The Cloud</description><atom:link href="http://www.tuzig.com/feeds/benny-daon.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 01 Sep 2016 11:59:00 +0000</lastBuildDate><item><title>A Museum's First Hackathon</title><link>http://www.tuzig.com/a-museums-first-hackathon.html</link><description>&lt;p&gt;It's been an interesting first year of freelancing at The Museum of
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tuzig LTD - Benny Daon</title><link>http://www.tuzig.com/</link><description>Building Fires in The Cloud</description><atom:link href="http://www.tuzig.com/feeds/benny-daon.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 01 Sep 2016 11:59:00 +0000</lastBuildDate><item><title>A Museum's First Hackathon</title><link>http://www.tuzig.com/a-museums-first-hackathon.html</link><description>&lt;p&gt;It's been an interesting first year of freelancing at The Museum of
 The Jewish People.  I wrote a lot of code, released quite a few versions
 and met some very good people.&lt;/p&gt;
 &lt;p&gt;Together we've opened some of the code of our databases site, published an
 &lt;a href="http://devapi.dbs.bh.org.il/v1/docs"&gt;API&lt;/a&gt; and started
-using creative commons licenses. We're now probably the most advanced Museum
-in Israel when it comes to digital assets and we keep pushing that envelope.&lt;/p&gt;
-&lt;p&gt;So when I met Daphne in a &lt;em&gt;Django Girls&lt;/em&gt; meetup and heard about HackExtend
-I offered to help and make it happen at the Museum.&lt;/p&gt;
-&lt;h2&gt;AND IT'S HAPPENING!&lt;/h2&gt;
-&lt;p&gt;In a fortnight, at the 15-16/9/2016, I'll be hacking in the first ever
-HackExtend right here, at Beit-Hatfutsot - The Museum of The Jewish People - and the hit is on.  The Museum's have put a lot of time into this and I have to prove
-It's worth it, so we can have many more Hackathon's at our excellent
-facilities - two auditorium with 100 &amp;amp; 200 seats, 10 class rooms and the gardens
-of Tel Aviv University.&lt;/p&gt;
-&lt;p&gt;My original plan was to prepare a lot of &lt;a href="https://github.com/Beit-Hatfutsot/dbs-front/labels/beginner"&gt;beginner issues&lt;/a&gt; and help people
-install the environment, pick an issue, fix it and submit a pull request.
-It's all very nice but after the pre-hackathon meetup last Friday,
-I understood these tasks don't fit those that are a part of a team as teams
-need a project.  So we've banged our heads together and came with four small
-projects that are we'd love to have and are fun to develop.&lt;/p&gt;
-&lt;p&gt;Here they are for your consideration,  ordered from the dullest to the coolest:&lt;/p&gt;
-&lt;h3&gt;Admin Interface&lt;/h3&gt;
-&lt;p&gt;We have registered users and we have roles, but no way to manage them.
-When I need to make someone an &lt;em&gt;editor&lt;/em&gt; I have to launch the python shell on
-the server and run a couple of commands.  While it's been fun playing with the
-shell, we can really use and Admin interface to manage users and roles.&lt;/p&gt;
-&lt;p&gt;This project needs a bit of UX design, frontend (preferably angular 2) and some
-backend (flask-user).&lt;/p&gt;
-&lt;h3&gt;My Story revamp&lt;/h3&gt;
-&lt;p&gt;We have a section on the site where registered users can collect items
-, group them in branches and share them with the world. It works - 
-here's &lt;a href="http://test.dbs.bh.org.il/story/2e775e50cffbe657e7179569822f002b"&gt;my story&lt;/a&gt;
-- but it needs some serious face lifting.&lt;/p&gt;
-&lt;p&gt;We need to name branches automatically based on the Place &amp;amp; Family the user searched for.
-Good branch names will allow us to improve our 'Related' links which are now
-terrible (based on elasticsearch's more-like-this feature) as we can find
-related items in users' branches i.e. For 'Paris' the related items are
-those that appear in more then one branch named &lt;em&gt;Paris&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;At the display front, we need to let the user control the order of the
-cards - i.e. put my grandmother's card first - and possibly over their size.
-It'll also be nice to let users customize as much of the display as possible -
-many of the users will be kids, researching their family roots, and they
-love customizing.&lt;/p&gt;
-&lt;p&gt;And we need to make it easier to put items directly into the branch I'm
-currently researching.&lt;/p&gt;
-&lt;p&gt;This project needs UX design and angular 1.4 coding on our frontend.  Netta, our
-resident designer, will help, explaining UI guidelines and sharing photoshop
-files.&lt;/p&gt;
-&lt;h3&gt;Family Tree Creator&lt;/h3&gt;
-&lt;p&gt;So far we've only developed a &lt;em&gt;read&lt;/em&gt; interface to the family trees and users
-are demanding a way to create and edit trees.  A Creation interface is simpler
-so we want to focus on that as the first step, allowing registered users to 
-create their own tree.&lt;/p&gt;
-&lt;p&gt;The challenge here is to use the interface you develop to create a complex tree,
-like &lt;a href="https://he.wikipedia.org/wiki/%D7%AA%D7%91%D7%A0%D7%99%D7%AA:%D7%90%D7%99%D7%9C%D7%9F_%D7%99%D7%95%D7%97%D7%A1%D7%99%D7%9F_%D7%A9%D7%9C_%D7%93%D7%9E%D7%95%D7%99%D7%95%D7%AA_%D7%A1%D7%A4%D7%A8_%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA"&gt;the one from Genesis&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Visitors Visualization for the Physical World&lt;/h3&gt;
-&lt;p&gt;At the entrance to the Museum we have a wall with 9 screens forming a 16:9
-rectangle with a diagonal of 126 inches.  It currently shows clips from Jewish
-Weddings and we want to replace it with a live world map of visitor to the site
-and the content viewed.  The winning visualization will run on that wall and
-will put a small plaque with the names of the team members.&lt;/p&gt;
-&lt;p&gt;The logs are published using &lt;a href="https://cloud.google.com/pubsub/docs/overview"&gt;google's pub/sub&lt;/a&gt;
-service and ip to geo seems straight forward enough -  I installed locally
-&lt;a href="https://github.com/fiorix/freegeoip"&gt;freegeoip&lt;/a&gt; and it works like a charm.&lt;/p&gt;
-&lt;p&gt;This will require some creative UX/UI design, simple backend and a small webapp,
-preferably using angular 2.&lt;/p&gt;
-&lt;h1&gt;See you at HackExtend!&lt;/h1&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Thu, 01 Sep 2016 11:59:00 +0000</pubDate><guid>tag:www.tuzig.com,2016-09-01:a-museums-first-hackathon.html</guid></item><item><title>Freeing a Yuck</title><link>http://www.tuzig.com/freeing-a-yuck.html</link><description>&lt;h1&gt;Freeing a Yack&lt;/h1&gt;
+using creative …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Thu, 01 Sep 2016 11:59:00 +0000</pubDate><guid>tag:www.tuzig.com,2016-09-01:/a-museums-first-hackathon.html/</guid></item><item><title>Freeing a Yuck</title><link>http://www.tuzig.com/freeing-a-yuck.html</link><description>&lt;h1&gt;Freeing a Yack&lt;/h1&gt;
 &lt;p&gt;[ Written as reply to &lt;a href="https://medium.com/u/2a5400d58707"&gt;Alon Nisser&lt;/a&gt; post: "&lt;a href="https://medium.com/@alonisser/i-toggled-public-now-what-6b42959db251#.e8vt352qf"&gt;I toggled public, now what?&lt;/a&gt;" ]  &lt;/p&gt;
-&lt;p&gt;A couple of weeks ago, I walked into the CEO's office for a chat.&lt;br /&gt;
-We've talked about what we should do next, now that we've completed opening the legacy DB with an API. Dan called it getting our Yack on the truck and it freaked me.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="A Wild Yack" src="https://cdn-images-1.medium.com/max/800/1*z5udGDTt7uL5VINRClZLdw.jpeg" /&gt;&lt;/p&gt;
-&lt;p&gt;Imagine, after a lot of pushing and shoving, finally you got the wild yack on the track and you're driving a truck with a poor Yack at the back cage and with no idea where you're going.  &lt;/p&gt;
-&lt;p&gt;Not only that, you feel the Yack is visited by more people and it becomes the center piece in many conversations and presentation. It behaves so well, It's tempting to forget it's is still a wild beast, with tons of bugs and very few tests. I'm sure the beast can - and probably will - kick me in the head.  &lt;/p&gt;
-&lt;p&gt;Not only that, the Yack has a &lt;strong&gt;Bus Factor&lt;/strong&gt; of just one, yours truly, so I hit the breaks and start working on the locks to free the beast. I wrote a README, chose a license and pushed the repo to github (we were using bitbucket before).  &lt;/p&gt;
-&lt;p&gt;Usually, the license is critical as it establishes the relationships between the contributors and the copyright holder. If it was my choise, I'd pick the 3-clause BSD license of Django, as it's very short - 27 lines- and free, but this time around it didn't feel right.  &lt;/p&gt;
-&lt;p&gt;I ended up choosing the dreaded Aferro GPLv3, a lengthy legal doc, just 5 lines short of the number of the beast. I once met its author, St IGNUcius of the Church of Emacs, and asked him if there was no way to make it shorter. It made him angry. HOORAY! (Imagine myself, a humble worshiper of sed's visual mode, poking a finger in the eye of that pompous emacs user)  &lt;/p&gt;
-&lt;p&gt;Anyways, I picked his license, as at the end of the day, The Museum is an Israeli Non profit founded in 1978 and there is no chance it will fall into the hands of some greedy lawyers that will decide to take the code private or sue contributors. IMHO, when you're sure the copyright holder will never be a kniving corporation, the license is not that important.  &lt;/p&gt;
-&lt;h2&gt;So I toggled public.&lt;/h2&gt;
-&lt;p&gt;Next came a pull request from Alon that helped me with that damn grunt (I know, gulp is better, if you can help, &lt;a href="https://github.com/Beit-Hatfutsot/dbs-front"&gt;feel free to fork&lt;/a&gt;).  &lt;/p&gt;
-&lt;p&gt;Next, Alon shared with me his post. In it I found a bug: the default API server is localhost:5000 which no one except Inna, my co-developer, and Myself have, as we didn't release the server code yet.  &lt;/p&gt;
-&lt;p&gt;I changed the default to our test server in devapi.dbs.bh.org.il and as Alon requested, started working with Niko (QA) and Nurit (the boss) on getting the issues over from Jira Hell.&lt;/p&gt;
-&lt;p&gt;As of now we have 61 open issues and 31 we already closed. We also customized the labels a bit and have a couple of Milestones we use to prioritize issues.  &lt;/p&gt;
-&lt;p&gt;I'm not yet sure what the open source community is getting from all of this and frankly, I don't really care. It's been great for the team and for now, that's all that matters.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Fri, 03 Jun 2016 01:00:00 +0000</pubDate><guid>tag:www.tuzig.com,2016-06-03:freeing-a-yuck.html</guid></item><item><title>Taking the edge of The Edge</title><link>http://www.tuzig.com/taking-the-edge-of-the-edge.html</link><description>&lt;p&gt;It's not easy living next to the edge.  True, I am not on the edge itself,
+&lt;p&gt;A couple of weeks ago, I walked into the CEO's office for a chat.&lt;br&gt;
+We've talked about what we should do next, now that we've completed opening the legacy DB with an API. Dan called …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Fri, 03 Jun 2016 01:00:00 +0000</pubDate><guid>tag:www.tuzig.com,2016-06-03:/freeing-a-yuck.html/</guid></item><item><title>Taking the edge of The Edge</title><link>http://www.tuzig.com/taking-the-edge-of-the-edge.html</link><description>&lt;p&gt;It's not easy living next to the edge.  True, I am not on the edge itself,
 lucky for me The Edge is an hour drive away.  The Edge is the name of a mosque
 in Jerusalem from which a terror wave broke out about a week ago.&lt;/p&gt;
-&lt;p&gt;Today it reached us.  At 3 PM, a terrorist stabbed 4 Israelies in
-central Tel Aviv just a couple of miles from my home.  It is scary especially as
-our leaders can hardly find their ass hole with both hands.&lt;/p&gt;
-&lt;p&gt;It reminds me of the dark days of "The Split Screen" in 2002
-when TV news had to use a split screen to track the sucide bombings and
-of 1994 when the street next to my home was closed for hours becuase the Rabbis
-had to make sure there's no piece of human flesh left on any of the trees.&lt;/p&gt;
-&lt;p&gt;This time it's diffrent (ain't it always?).  The terrorists have only knives
-and it's clear there is no driving organization behind this. It's people who
-wake up one morning and decide to get a knife and hit the streets of
-Israeli cities and kill as many jews as possible.&lt;/p&gt;
-&lt;p&gt;Like it normally does, the terror wave started in the heart of Jerusalem at
-The Edge Mosque at Temple Mount.  The same tiny place (150,000 m2) humans
-have been fighting over for 3 millenias and a torn in every empires' back since
-the days of the babylonians.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Jerusalem Topology" src="http://geographyeducationdotorg.files.wordpress.com/2013/06/holylandelevation.jpg?w=593&amp;amp;h=466" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The Temple Mount forms the northern portion of a very narrow spur of hill that
-slopes sharply downward from north to south. Rising above the Kidron Valley to
-the east and Tyropoeon Valley to the west,[13] its peak reaches a height of 740
-m (2,428 ft) above sea level.[14] In around 19 BCE, Herod the Great extended the
-Mount's natural plateau by enclosing the area with four massive retaining walls
-and filling the voids. This artificial expansion resulted in a large flat
-expanse which today forms the eastern section of the Old City of Jerusalem. The
-trapezium shaped platform measures 488 m along the west, 470 m along the east,
-315 m along the north and 280 m along the south, giving a total area
-of approximately 150,000 m2 (37 acres). (wikipedia)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;There has to be topological reason this place to be so precious and I believe
-the map above has some pretty convincing clues. First, an easy slope west &amp;amp; down
-to the sea makes it the eastern most city connected to the mediterranean ports and cities.
-Second, the lowest place on earth is just to the East with a drop 3,800 ft. from the city
-forming a steep barrier between Jerusalem and the near East.&lt;/p&gt;
-&lt;p&gt;The Profit gave The Edge it's fitting name - coming from the east it sure
-looks like the edge, separating east from west.&lt;/p&gt;
-&lt;p&gt;The terror we're wittensing is a result of a clash between east and west.
-It has a new social structure and a new communication network in the from of
-the Interent and we must use the power of the network to lower the flames.&lt;/p&gt;
-&lt;p&gt;, the shape of social netwroks on the Internet that
-spread hatered and motivate young people to become terrorists.
-The Internet helps the is powerful weapon and in the hands &lt;/p&gt;
-&lt;p&gt;south I'll soon have to join guard duty at my girl's kindergarten.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.generationword.com/jerusalem101/17-millo-jebusite-wall.html"&gt;Ancient Times&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Thu, 08 Oct 2015 23:59:00 +0000</pubDate><guid>tag:www.tuzig.com,2015-10-08:taking-the-edge-of-the-edge.html</guid></item><item><title>Fear and Loathing in Israel</title><link>http://www.tuzig.com/fear-and-loathing-in-israel.html</link><description>&lt;p&gt;By now, you’ve probably heard about the ugly elections we had in Israel. It's the third time in six years that I’ve been called to vote, and every time I’ve contributed long hours to develop open source tools helping voters make intelligent decisions.&lt;/p&gt;
-&lt;p&gt;Our site, Open Knesset, and it’s API got some extensive use this time around by many election games and application. These include our very own&lt;a href="http://bchirometer.oknesset.org/"&gt; Bchirometer&lt;/a&gt; app (Election Meter) which helps voters see which political parties voted according to the agendas they deem as important, and the&lt;a href="https://osubs.org/"&gt; Submarine,&lt;/a&gt; a game developed in cooperation with The Marker magazine, for choosing which politicians should head Knesset committees. Other apps based on our platforms include:&lt;a href="http://azlemi.org.il/"&gt; AzLemi&lt;/a&gt; ("So, who should I vote for?")&lt;a href="http://www.calcalist.co.il/local/articles/0,7340,L-3652901,00.html"&gt; Calcalist economic pre election tool&lt;/a&gt;, a&lt;a href="http://www.votemap.info/"&gt; visualization of Knesset voting patterns&lt;/a&gt;, and the fun&lt;a href="http://viz.calcalist.co.il/otr/web/"&gt; Bottom Line&lt;/a&gt; app."&lt;/p&gt;
-&lt;p&gt;We’ve put a lot of effort into scraping the official site and, ordering and serving it’s data. For example, a bill has no ID in the official site and we need to collect information from the "Knesset Table", plenum votes and committee meetings and try and match their names to make it possible to track bills as the go through the legislation process.&lt;/p&gt;
-&lt;p&gt;In the last Knesset there were just  55 days when proposals were received at the Knesset Table. These days are spread between 3/13/2013 and 7/30/2014 and in them we scraped no less than 2794 private MKs bills for an average of  more than 50 proposals a day.&lt;/p&gt;
-&lt;p&gt;Out of this rain of proposals, only 58 got approved.  145 bills just managed to pass a pre-approval and 89 failed. Only 10 passed the first vote and just 6 are waiting for committee’s last corrections.&lt;/p&gt;
-&lt;p&gt;Unfortunately, this was all in vein. The elections were decided by emotions rather than logic with the leading parties using negative campaigns, spreading fear and loathing. It cost us quite a bit - around a quarter of a billion shekels was the bill last time. &lt;/p&gt;
-&lt;p&gt;According to a special report by the State Comptroller, the 2013 elections, costed the Israeli public ₪241,801,302 ($60MM) out of which ₪195,079,702 came from taxpayers money and the rest from donations.  But this was not enough. Most of the parties ended the election with a debt bringing the total parties debt to ₪62,863,928. Halikud is the leader with a debt of ₪21,147,961 and then Sash with ₪12,271,028 and The Movement with the silver at ₪7,034,727.&lt;/p&gt;
-&lt;p&gt;The sad thing is that with all this money, we got a society more fragmented and divided than ever before.  The arab citizens are feeling their basic rights have been challenged and prominent speaker of the left have been attacked.&lt;/p&gt;
-&lt;p&gt;Yehonatan Gefen, a popular author, poet, songwriter, journalist, and playwright was attacked at his home a couple of days after the election . Achinoam Nini, a singer &lt;a href="https://youtu.be/9hyU5qXNIs8?t=1m20s"&gt;that sang in the Vatican&lt;/a&gt; was attacked at the airport just a couple of days ago. &lt;/p&gt;
-&lt;p&gt;To me, these are clear signs, that our political system is broken and that instead of using open data to measure it we should start fresh. It’s time to restart the Knesset.  Instead of tracking the votes of the MKs, and other data from the Knesset we should develop a new system that makes it easy for activists to bring their issues to the public attention and for representative to join public initiatives and bring them to the Knesset and lead public discourse.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Wed, 18 Mar 2015 09:00:00 +0000</pubDate><guid>tag:www.tuzig.com,2015-03-18:fear-and-loathing-in-israel.html</guid></item><item><title>There are only two hard things</title><link>http://www.tuzig.com/there-are-only-two-hard-things.html</link><description>&lt;blockquote&gt;
+&lt;p&gt;Today it reached …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Thu, 08 Oct 2015 23:59:00 +0000</pubDate><guid>tag:www.tuzig.com,2015-10-08:/taking-the-edge-of-the-edge.html/</guid></item><item><title>Fear and Loathing in Israel</title><link>http://www.tuzig.com/fear-and-loathing-in-israel.html</link><description>&lt;p&gt;By now, you’ve probably heard about the ugly elections we had in Israel. It's the third time in six years that I’ve been called to vote, and every time I’ve contributed long hours to develop open source tools helping voters make intelligent decisions.&lt;/p&gt;
+&lt;p&gt;Our site, Open Knesset …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Wed, 18 Mar 2015 09:00:00 +0000</pubDate><guid>tag:www.tuzig.com,2015-03-18:/fear-and-loathing-in-israel.html/</guid></item><item><title>There are only two hard things</title><link>http://www.tuzig.com/there-are-only-two-hard-things.html</link><description>&lt;blockquote&gt;
 &lt;p&gt;There are only two hard things in Computer Science: cache invalidation and naming things.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Phil Karlton&lt;/li&gt;
@@ -144,53 +19,14 @@ The Internet helps the is powerful weapon and in the hands &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I’ve heard this statement for the first time about five years ago and
 I believe that not only it is true, but it has a grain of an even a bigger truth.&lt;/p&gt;
-&lt;p&gt;Naming things is hard but hardly new. Confucius followers are working on “Alignment of Names” to align the names they use with things’ proper meanings.&lt;/p&gt;
-&lt;p&gt;Cache Invalidation is a bit more technical: To speed server response time, websites use cache.
-The cache is a small, fast memory that temporarily stores results of complex, timely processes.
-The hard part with cache is that you have to invalidate it when new data changes the processes result. If you fail, the data loses touch with reality and you’re serving stale data. To stay sharp, the server needs to detect stale data and invalidate it and it’s not easy.&lt;/p&gt;
-&lt;p&gt;Our mind uses a cache and it’s very hard to invalidate it.&lt;/p&gt;
-&lt;p&gt;When I meet a friend do I really see him? Will I notice he has changed? Will I notice a new blister? A new religion? probably not.&lt;/p&gt;
-&lt;p&gt;We all carry stale caches in our minds. The stale part of the cache is made of
-miconceptions and cleaning it up is hard work.
-The internet can't help fs the mobile fire-hose of information is quite a distraction and I need to turn it down so my mind will have the cycles to work on trashing misconceptions.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Thu, 26 Jun 2014 09:00:00 +0000</pubDate><guid>tag:www.tuzig.com,2014-06-26:there-are-only-two-hard-things.html</guid></item><item><title>Thank you to all Github founders and their families</title><link>http://www.tuzig.com/thank-you-to-all-github-founders-and-their-families.html</link><description>
+&lt;p&gt;Naming …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Thu, 26 Jun 2014 09:00:00 +0000</pubDate><guid>tag:www.tuzig.com,2014-06-26:/there-are-only-two-hard-things.html/</guid></item><item><title>Thank you to all Github founders and their families</title><link>http://www.tuzig.com/thank-you-to-all-github-founders-and-their-families.html</link><description>
       &lt;p&gt;I guess things aren&amp;rsquo;t that simple and easy at github at the moment.  I&amp;rsquo;m watching it all from over 7,000 miles away and I believe I can feel the founders&amp;rsquo; and their families pains.&lt;/p&gt;
 
-&lt;p&gt;While we all want rapid growth, we tend to forget that growing at a ridiculous speed is impossible to manage.  Some are lucky, and become the billion-users-behemoth while most have a tougher ride.  It is like riding a crazy five years roller coaster enabling you to develop property worth over $100MM.&lt;/p&gt;
-
-&lt;p&gt;Personally, it&amp;rsquo;s very stressful to be a founder at such an endeavor.   It changes your live.  It makes your family and friends look at you differently, re-labeling you and taking you out of context.  You find yourself in a new place and it&amp;rsquo;s very stressful. As Newman said: &amp;ldquo;the mail never stops coming&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;I guess it&amp;rsquo;s even more stressful for the spouses.  Being at the passenger seat of this wild ride they help with navigation.  Sponses role is never  formal gut it&amp;rsquo;s a good thing they are involved.  IMO, it&amp;rsquo;s a good thing for a founder to be able to talk to their spouses and listen to their advice.&lt;/p&gt;
-
-&lt;p&gt;I was sorry to read the latest posts coming from github and I want to thank all github founders and their families for a great service to me and to the open source community.&lt;/p&gt;
-
-&lt;p&gt;Social Coding FTW!&lt;/p&gt;
-
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Tue, 18 Mar 2014 00:30:00 +0000</pubDate><guid>tag:www.tuzig.com,2014-03-18:thank-you-to-all-github-founders-and-their-families.html</guid></item><item><title>gov.uk design principles</title><link>http://www.tuzig.com/govuk-design-principles.html</link><description>
+&lt;p&gt;While we all want rapid growth, we tend to forget that growing at …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Tue, 18 Mar 2014 00:30:00 +0000</pubDate><guid>tag:www.tuzig.com,2014-03-18:/thank-you-to-all-github-founders-and-their-families.html/</guid></item><item><title>gov.uk design principles</title><link>http://www.tuzig.com/govuk-design-principles.html</link><description>
   &lt;img class="halo" src="http://41.media.tumblr.com/tumblr_m2az3lByDl1qzbo9no1_400.png" alt="GDS page" /&gt;
   &lt;blockquote&gt;&lt;p&gt;&lt;a href="https://www.gov.uk/designprinciples"&gt;GDS design principles&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.gov.uk/designprinciples"&gt;&lt;/a&gt;&lt;a href="http://www.gov.uk"&gt;www.gov.uk&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;Start with needs*&lt;/p&gt;&lt;p&gt;*user needs not government needs&lt;/p&gt;&lt;p&gt;The design process must start with iden&amp;shy;ti&amp;shy;fy&amp;shy;ing and think&amp;shy;ing about real user needs. We should design around those &amp;mdash; not around the way the &amp;lsquo;offi&amp;shy;cial process&amp;rsquo; is at the moment. We must&amp;hellip;&lt;/p&gt;
-  &lt;/blockquote&gt;
-  &lt;p&gt;The british gov reminds us again why they ruled the biggest empire&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Mon, 17 Mar 2014 22:50:00 +0000</pubDate><guid>tag:www.tuzig.com,2014-03-17:govuk-design-principles.html</guid></item><item><title>Planning Game on a Pool Table</title><link>http://www.tuzig.com/planning-game-on-a-pool-table.html</link><description>
+  &lt;p&gt;Start with needs*&lt;/p&gt;&lt;p&gt;*user needs not government needs&lt;/p&gt;&lt;p&gt;The design process must start with iden&amp;shy;ti&amp;shy;fy&amp;shy;ing and think&amp;shy;ing about real user needs. We should design around those &amp;mdash; not around the way the &amp;lsquo;offi&amp;shy;cial process&amp;rsquo; is at the moment. We must …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Mon, 17 Mar 2014 22:50:00 +0000</pubDate><guid>tag:www.tuzig.com,2014-03-17:/govuk-design-principles.html/</guid></item><item><title>Planning Game on a Pool Table</title><link>http://www.tuzig.com/planning-game-on-a-pool-table.html</link><description>
 &lt;div&gt;&lt;p&gt;
-I'm just back from a great Open Knesset meetup. There were seven of us, a pool table and lots of free goldstar beer (thanks to amir from goldstar) in the "Rosa Parks". It was great fun.&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZApNSQaII/AAAAAAAAAiA/U8SX0f1Vuv4/s1600/IMG_0412.JPG"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 600px; height: 450px;" src="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZApNSQaII/AAAAAAAAAiA/U8SX0f1Vuv4/s400/IMG_0412.JPG" alt="" id="BLOGGER_PHOTO_ID_5460122674918353026" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;We came to play with planning. Our project, &lt;a href="http://www.oknesset.org/"&gt;Open-Knesset&lt;/a&gt;, needs focus and the game delivered. We started with the &lt;a href="http://www.c2.com/cgi/wiki?PlanningGame"&gt;wiki definition&lt;/a&gt;, the ideas of &lt;a href="http://agilezen.com/tour/visualize"&gt;AgileZen&lt;/a&gt; and a pool table.&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZE5qVKTwI/AAAAAAAAAiI/izPPor-wj18/s1600/setup.png"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 600px; height: 450px;" src="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZE5qVKTwI/AAAAAAAAAiI/izPPor-wj18/s400/setup.png" alt="" id="BLOGGER_PHOTO_ID_5460127355639582466" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;As the game progressed the table filled with cards. Well, the left side did, the right was left empty, opening room for &lt;a href="http://michaeltrier.com/"&gt;empty thoughts&lt;/a&gt;.We decided to split: keep what's critical above the stick and what's important below it.&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_54nzRYlF1Ss/S8ZH5QaFjmI/AAAAAAAAAiQ/OKLi_SCJVAw/s1600/first+split.png"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 600px; height: 450px;" src="http://3.bp.blogspot.com/_54nzRYlF1Ss/S8ZH5QaFjmI/AAAAAAAAAiQ/OKLi_SCJVAw/s400/first+split.png" alt="" id="BLOGGER_PHOTO_ID_5460130647215804002" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;We left the table when we had our prime objective: Make our user go wow! and how to do it - serving a page that renders a glance at a Knesset Member. We cleared the table and focused on the information displayed on the member's page.  At that time, someone wanted to play pool, so we moved to a side table, opened one laptop with balsamiq and wireframed the page.&lt;br /&gt;&lt;br /&gt;I had no idea it would end there, a pleasant surprise.&lt;br /&gt;&lt;br /&gt;Thanks to:&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZKkBwoQVI/AAAAAAAAAiY/aqwjquD3Qrs/s1600/IMG_0411.JPG"&gt;&lt;img style="float: right; margin: 0pt 0pt 10px 10px; cursor: pointer; width: 200px; height: 150px;" src="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZKkBwoQVI/AAAAAAAAAiY/aqwjquD3Qrs/s200/IMG_0411.JPG" alt="" id="BLOGGER_PHOTO_ID_5460133581041451346" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;the ppl of the "Rosa Parks" for the place the service and the food&lt;br /&gt;&lt;/li&gt;&lt;li&gt;Amir from Goldstar for the free beer&lt;br /&gt;&lt;/li&gt;&lt;li&gt;The &lt;a href="http://babylon5.wikia.com/wiki/Great_Maker"&gt;Great Maker&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;/p&gt;&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Wed, 14 Apr 2010 12:30:00 +0000</pubDate><guid>tag:www.tuzig.com,2010-04-14:planning-game-on-a-pool-table.html</guid></item><item><title>A piece of burnt charcoal and a cave's wall</title><link>http://www.tuzig.com/a-piece-of-burnt-charcoal-and-a-caves-wall.html</link><description>
+I'm just back from a great Open Knesset meetup. There were seven of us, a pool table and lots of free goldstar beer (thanks to amir from goldstar) in the "Rosa Parks". It was great fun.&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZApNSQaII/AAAAAAAAAiA/U8SX0f1Vuv4/s1600/IMG_0412.JPG"&gt;&lt;img style="display: block; margin: 0px auto 10px; text-align: center; cursor: pointer; width: 600px; height: 450px;" src="http://1.bp.blogspot.com/_54nzRYlF1Ss/S8ZApNSQaII/AAAAAAAAAiA/U8SX0f1Vuv4/s400/IMG_0412.JPG" alt="" id="BLOGGER_PHOTO_ID_5460122674918353026" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;We came to play with planning. Our project, &lt;a href="http://www.oknesset.org/"&gt;Open-Knesset&lt;/a&gt;, needs focus and the game …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Wed, 14 Apr 2010 12:30:00 +0000</pubDate><guid>tag:www.tuzig.com,2010-04-14:/planning-game-on-a-pool-table.html/</guid></item><item><title>A piece of burnt charcoal and a cave's wall</title><link>http://www.tuzig.com/a-piece-of-burnt-charcoal-and-a-caves-wall.html</link><description>
 &lt;p&gt;
-I use a lot of Web 2.0 sites like flickr, youtube, twitter, friendfeed and linkedin on a daily basis and I think they are elegant. I think the term I use to group them is crap. &lt;span style="font-weight: bold;"&gt;Web 2.0&lt;/span&gt; tells me nothing about what they have in common and confuses me when it comes to their history as it suggests it's all about a sock dog 2.0.&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://msnbcmedia3.msn.com/j/msnbc/Components/Photos/070904/pets.widec.jpg"&gt;&lt;img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px;" src="http://msnbcmedia3.msn.com/j/msnbc/Components/Photos/070904/pets.widec.jpg" alt="" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;One of the things all those sites have in common is user contributions. We all do it, but why do we spend countless hours twitting, uploading, writing and editing? What is the motivation and what is the role-model we chase? I discovered quite a few role-models - David Willis for blogers, Lonely Girl for video, Linus for kernel coders, Randall Munro for comics and Guido van Rossum for python programmer to name a few.&lt;br /&gt;&lt;br /&gt;To me they are all artists, or at least gifted artisans whose art will be grokked by future generations. Arts origins date way back, long before the sock dog:&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://upload.wikimedia.org/wikipedia/commons/0/03/Lascaux-aurochs.jpg"&gt;&lt;img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px;" src="http://upload.wikimedia.org/wikipedia/commons/0/03/Lascaux-aurochs.jpg" alt="" border="0" /&gt;&lt;/a&gt;&lt;blockquote&gt;
-  Cave Paintings are paintings on cave walls and ceilings, and the term is used especially for those dating to prehistoric times.
-  The earliest known European cave paintings date to 32,000 years ago.
-  The purpose of the cave paintings is not known. The evidence suggests that they were not merely decorations
-  of living areas, since the caves in which they have been found do not have signs of ongoing habitation.
-  Also, they are often in areas of caves that are not easily accessed. Some theories hold that they may
-  have been a way of transmitting information, while other theories ascribe them a religious or ceremonial purpose.
-  &lt;br /&gt; &lt;a href="http://en.wikipedia.org/wiki/Cave_paintings"&gt;Wikipedia&lt;/a&gt;
-&lt;/blockquote&gt;
-I don't think the caveman purpose was other than:
-&lt;blockquote&gt;
-  ...connecting with peers, achieving a certain level of fame, notoriety, or prestige, and the desire to express oneself.
-  &lt;br /&gt; (from &lt;a href="http://en.wikipedia.org/wiki/User_generated_content"&gt;Wikipedia&lt;/a&gt;'s User Generated Content)
-&lt;/blockquote&gt; 
-The piece of charcoal grew to be a twitt, a post, a bookmark, a photo, a video. The cave's wall matured into Web 2.0 sites or as I think we should call them WallX.
-&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Sun, 21 Sep 2008 22:50:00 +0000</pubDate><guid>tag:www.tuzig.com,2008-09-21:a-piece-of-burnt-charcoal-and-a-caves-wall.html</guid></item></channel></rss>
+I use a lot of Web 2.0 sites like flickr, youtube, twitter, friendfeed and linkedin on a daily basis and I think they are elegant. I think the term I use to group them is crap. &lt;span style="font-weight: bold;"&gt;Web 2.0&lt;/span&gt; tells me nothing about what they have in common and …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benny Daon</dc:creator><pubDate>Sun, 21 Sep 2008 22:50:00 +0000</pubDate><guid>tag:www.tuzig.com,2008-09-21:/a-piece-of-burnt-charcoal-and-a-caves-wall.html/</guid></item></channel></rss>
